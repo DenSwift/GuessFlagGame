@@ -1,13 +1,13 @@
 //
-//  SecondViewController.swift
+//  AfrikaViewController.swift
 //  Guess country flag
 //
-//  Created by Денис  on 24.09.2022.
+//  Created by Денис  on 29.09.2022.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class AfrikaViewController: UIViewController {
 
     // MARK: - Outlets
     // Images
@@ -38,10 +38,10 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        countryStorage1 = ["Аргетина": UIImage(named: "argetina")!, "Канада": UIImage(named: "kanada")!, "США": UIImage(named: "usa")!]
-        countryStorage2 = ["Бразилия": UIImage(named: "brazil")!, "Мексика": UIImage(named: "mexico")!, "Куба": UIImage(named: "cuba")!]
-        countryStorage3 = ["Чили": UIImage(named: "chile")!, "Эквадор": UIImage(named: "ecuador")!, "Гондурас": UIImage(named: "honduras")!]
-        countryStorage4 = ["Колумбия": UIImage(named: "colombia")!, "Уругвай": UIImage(named: "uruguay")!, "Сальвадор": UIImage(named: "salvador")!]
+        countryStorage1 = ["Алжир": UIImage(named: "algeria")!, "Чад": UIImage(named: "chad")!, "Египет": UIImage(named: "egypt")!]
+        countryStorage2 = ["Кения": UIImage(named: "kenya")!, "Ливия": UIImage(named: "libya")!, "Марокко": UIImage(named: "morroco")!]
+        countryStorage3 = ["Нигер": UIImage(named: "niger")!, "Тунис": UIImage(named: "tunisia")!, "Уганда": UIImage(named: "uganda")!]
+        countryStorage4 = ["Нигерия": UIImage(named: "nigeria")!, "Сомали": UIImage(named: "somalia")!, "ЮАР": UIImage(named: "southAfrica")!]
         
         settingsForUIImage()
         
@@ -49,8 +49,8 @@ class SecondViewController: UIViewController {
         downloadImage(sender1: firstFlagImage, sender2: secondFlagImage, sender3: thirdFlagImage, sender4: fourthFlagImage)
         
         // Label
-       downloadName(sender: questionLabel)
-    
+        downloadName(sender: questionLabel)
+
         // Question label settings
         questionLabel.layer.cornerRadius = 40
         questionLabel.layer.borderWidth = 3
@@ -85,9 +85,9 @@ class SecondViewController: UIViewController {
     
     private func checkAnswer(sender: UIImageView) {
         
-        if questionLabel.text == "Бразилия" {
-            let brazilImage = UIImage(named: "brazil")
-            if sender.image == brazilImage {
+        if questionLabel.text == "Алжир" {
+            let franceImage = UIImage(named: "algeria")
+            if sender.image == franceImage {
                 correctAnswer()
                 downloadImage(sender1: firstFlagImage, sender2: secondFlagImage, sender3: thirdFlagImage, sender4: fourthFlagImage)
                 downloadName(sender: questionLabel)
@@ -97,9 +97,9 @@ class SecondViewController: UIViewController {
                 downloadName(sender: questionLabel)
             
             }
-        } else if questionLabel.text == "Чили" {
-            let chileImage = UIImage(named: "chile")
-            if sender.image == chileImage {
+        } else if questionLabel.text == "Чад" {
+            let moldovaImage = UIImage(named: "chad")
+            if sender.image == moldovaImage {
                 correctAnswer()
                 downloadImage(sender1: firstFlagImage, sender2: secondFlagImage, sender3: thirdFlagImage, sender4: fourthFlagImage)
                 downloadName(sender: questionLabel)
@@ -109,9 +109,9 @@ class SecondViewController: UIViewController {
                 downloadName(sender: questionLabel)
             
             }
-        } else if questionLabel.text == "Куба" {
-            let cubaImage = UIImage(named: "cuba")
-            if sender.image == cubaImage {
+        } else if questionLabel.text == "Египет" {
+            let ukraineImage = UIImage(named: "egypt")
+            if sender.image == ukraineImage {
                 correctAnswer()
                 downloadImage(sender1: firstFlagImage, sender2: secondFlagImage, sender3: thirdFlagImage, sender4: fourthFlagImage)
                 downloadName(sender: questionLabel)
@@ -121,9 +121,9 @@ class SecondViewController: UIViewController {
                 downloadName(sender: questionLabel)
             
             }
-        } else if questionLabel.text == "Колумбия" {
-            let colombiaImage = UIImage(named: "colombia")
-            if sender.image == colombiaImage {
+        } else if questionLabel.text == "Кения" {
+            let albaniaImage = UIImage(named: "kenya")
+            if sender.image == albaniaImage {
                 correctAnswer()
                 downloadImage(sender1: firstFlagImage, sender2: secondFlagImage, sender3: thirdFlagImage, sender4: fourthFlagImage)
                 downloadName(sender: questionLabel)
@@ -133,9 +133,9 @@ class SecondViewController: UIViewController {
                 downloadName(sender: questionLabel)
             
             }
-        } else if  questionLabel.text == "Эквадор" {
-            let ecuadorImage = UIImage(named: "ecuador")
-            if sender.image == ecuadorImage {
+        } else if  questionLabel.text == "Ливия" {
+            let bulgaryImage = UIImage(named: "libya")
+            if sender.image == bulgaryImage {
                 correctAnswer()
                 downloadImage(sender1: firstFlagImage, sender2: secondFlagImage, sender3: thirdFlagImage, sender4: fourthFlagImage)
                 downloadName(sender: questionLabel)
@@ -145,9 +145,9 @@ class SecondViewController: UIViewController {
                 downloadName(sender: questionLabel)
             
             }
-        } else if questionLabel.text == "Гондурас" {
-            let hondurasImage = UIImage(named: "honduras")
-            if sender.image == hondurasImage {
+        } else if questionLabel.text == "Марокко" {
+            let germanyImage = UIImage(named: "morroco")
+            if sender.image == germanyImage {
                 correctAnswer()
                 downloadImage(sender1: firstFlagImage, sender2: secondFlagImage, sender3: thirdFlagImage, sender4: fourthFlagImage)
                 downloadName(sender: questionLabel)
@@ -157,9 +157,9 @@ class SecondViewController: UIViewController {
                 downloadName(sender: questionLabel)
             
             }
-        } else if questionLabel.text == "Мексика" {
-            let mexicoImage = UIImage(named: "mexico")
-            if sender.image == mexicoImage {
+        } else if questionLabel.text == "Нигер" {
+            let liechtensteinImage = UIImage(named: "niger")
+            if sender.image == liechtensteinImage {
                 correctAnswer()
                 downloadImage(sender1: firstFlagImage, sender2: secondFlagImage, sender3: thirdFlagImage, sender4: fourthFlagImage)
                 downloadName(sender: questionLabel)
@@ -169,9 +169,9 @@ class SecondViewController: UIViewController {
                 downloadName(sender: questionLabel)
             
             }
-        } else if questionLabel.text == "Сальвадор" {
-            let salvadorImage = UIImage(named: "salvador")
-            if sender.image == salvadorImage {
+        } else if questionLabel.text == "Тунис" {
+            let polandImage = UIImage(named: "tunisia")
+            if sender.image == polandImage {
                 correctAnswer()
                 downloadImage(sender1: firstFlagImage, sender2: secondFlagImage, sender3: thirdFlagImage, sender4: fourthFlagImage)
                 downloadName(sender: questionLabel)
@@ -181,9 +181,9 @@ class SecondViewController: UIViewController {
                 downloadName(sender: questionLabel)
             
             }
-        } else if questionLabel.text == "Уругвай" {
-            let uruguayImage = UIImage(named: "uruguay")
-            if sender.image == uruguayImage {
+        } else if questionLabel.text == "Уганда" {
+            let romaniaImage = UIImage(named: "uganda")
+            if sender.image == romaniaImage {
                 correctAnswer()
                 downloadImage(sender1: firstFlagImage, sender2: secondFlagImage, sender3: thirdFlagImage, sender4: fourthFlagImage)
                 downloadName(sender: questionLabel)
@@ -193,9 +193,9 @@ class SecondViewController: UIViewController {
                 downloadName(sender: questionLabel)
             
             }
-        } else if questionLabel.text == "США" {
-            let usaImage = UIImage(named: "usa")
-            if sender.image == usaImage {
+        } else if questionLabel.text == "Нигерия" {
+            let spainImage = UIImage(named: "nigeria")
+            if sender.image == spainImage {
                 correctAnswer()
                 downloadImage(sender1: firstFlagImage, sender2: secondFlagImage, sender3: thirdFlagImage, sender4: fourthFlagImage)
                 downloadName(sender: questionLabel)
@@ -205,9 +205,9 @@ class SecondViewController: UIViewController {
                 downloadName(sender: questionLabel)
             
             }
-        } else if questionLabel.text == "Канада" {
-            let canadaImage = UIImage(named: "kanada")
-            if sender.image == canadaImage {
+        } else if questionLabel.text == "Сомали" {
+            let swedenImage = UIImage(named: "somalia")
+            if sender.image == swedenImage {
                 correctAnswer()
                 downloadImage(sender1: firstFlagImage, sender2: secondFlagImage, sender3: thirdFlagImage, sender4: fourthFlagImage)
                 downloadName(sender: questionLabel)
@@ -217,9 +217,9 @@ class SecondViewController: UIViewController {
                 downloadName(sender: questionLabel)
             
             }
-        } else if  questionLabel.text == "Аргетина" {
-            let argetinaImage = UIImage(named: "argetina")
-            if sender.image == argetinaImage {
+        } else if  questionLabel.text == "ЮАР" {
+            let switzerlandImage = UIImage(named: "southAfrica")
+            if sender.image == switzerlandImage {
                 correctAnswer()
                 downloadImage(sender1: firstFlagImage, sender2: secondFlagImage, sender3: thirdFlagImage, sender4: fourthFlagImage)
                 downloadName(sender: questionLabel)
@@ -278,52 +278,52 @@ class SecondViewController: UIViewController {
         var fourthStorage: [String] = []
         
         // firstFlagImage
-        let argetinaImage = UIImage(named: "argetina")
-        let usaImage = UIImage(named: "usa")
-        let canadaImage = UIImage(named: "kanada")
+        let franceImage = UIImage(named: "algeria")
+        let moldovaImage = UIImage(named: "chad")
+        let ukraineImage = UIImage(named: "egypt")
         
-        if firstFlagImage.image == argetinaImage {
-            firstStorage.append("Аргетина")
-        } else if firstFlagImage.image == usaImage {
-            firstStorage.append("США")
-        }  else if firstFlagImage.image == canadaImage {
-            firstStorage.append("Канада")
+        if firstFlagImage.image == franceImage {
+            firstStorage.append("Алжир")
+        } else if firstFlagImage.image == moldovaImage {
+            firstStorage.append("Чад")
+        }  else if firstFlagImage.image == ukraineImage {
+            firstStorage.append("Египет")
         }
         // secondFlagImage
-        let brazilImage = UIImage(named: "brazil")
-        let mexicoImage = UIImage(named: "mexico")
-        let cubaImage = UIImage(named: "cuba")
+        let albaniaImage = UIImage(named: "kenya")
+        let bulgaryImage = UIImage(named: "libya")
+        let germanyImage = UIImage(named: "morroco")
         
-        if secondFlagImage.image == brazilImage {
-            secondStorage.append("Бразилия")
-        } else if secondFlagImage.image == mexicoImage {
-            secondStorage.append("Мексика")
-        }  else if secondFlagImage.image == cubaImage {
-            secondStorage.append("Куба")
+        if secondFlagImage.image == albaniaImage {
+            secondStorage.append("Кения")
+        } else if secondFlagImage.image == bulgaryImage {
+            secondStorage.append("Ливия")
+        }  else if secondFlagImage.image == germanyImage {
+            secondStorage.append("Марокко")
         }
         // thirdFlagImage flags
-        let chileImage = UIImage(named: "chile")
-        let ecuadorImage = UIImage(named: "ecuador")
-        let hondurasImage = UIImage(named: "honduras")
+        let liechtensteinImage = UIImage(named: "niger")
+        let polandImage = UIImage(named: "tunisia")
+        let romaniaImage = UIImage(named: "uganda")
         
-        if thirdFlagImage.image == chileImage {
-            thirdStorage.append("Чили")
-        } else if thirdFlagImage.image == ecuadorImage {
-            thirdStorage.append("Эквадор")
-        } else if thirdFlagImage.image == hondurasImage {
-            thirdStorage.append("Гондурас")
+        if thirdFlagImage.image == liechtensteinImage {
+            thirdStorage.append("Нигер")
+        } else if thirdFlagImage.image == polandImage {
+            thirdStorage.append("Тунис")
+        } else if thirdFlagImage.image == romaniaImage {
+            thirdStorage.append("Уганда")
         }
         // fourthFlagImage flags
-        let dRImage = UIImage(named: "colombia")
-        let uruguayImage = UIImage(named: "uruguay")
-        let salvadorImage = UIImage(named: "salvador")
+        let spainImage = UIImage(named: "nigeria")
+        let swedenImage = UIImage(named: "somalia")
+        let switzerlandImage = UIImage(named: "southAfrica")
         
-        if fourthFlagImage.image == dRImage {
-            fourthStorage.append("Колумбия")
-        } else if fourthFlagImage.image == uruguayImage {
-            fourthStorage.append("Уругвай")
-        } else if fourthFlagImage.image == salvadorImage {
-            fourthStorage.append("Сальвадор")
+        if fourthFlagImage.image == spainImage {
+            fourthStorage.append("Нигерия")
+        } else if fourthFlagImage.image == swedenImage {
+            fourthStorage.append("Сомали")
+        } else if fourthFlagImage.image == switzerlandImage {
+            fourthStorage.append("ЮАР")
         }
         
         let array = [firstStorage.randomElement(), secondStorage.randomElement(), thirdStorage.randomElement(), fourthStorage.randomElement()]
@@ -333,7 +333,7 @@ class SecondViewController: UIViewController {
         }
     }
     // Count round in game
-    private  func countRound(sender: UIButton) {
+    private func countRound(sender: UIButton) {
         
         if rounds != 1 {
             if sender.isTouchInside {

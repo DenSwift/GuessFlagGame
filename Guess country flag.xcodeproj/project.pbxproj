@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		053F7C3228E0A59D00F384D7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053F7C3128E0A59D00F384D7 /* Model.swift */; };
-		054D01C528DF7A0C00EAD8A5 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054D01C428DF7A0C00EAD8A5 /* SettingsTableViewController.swift */; };
+		0544685628E6085700FF596C /* AfrikaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544685528E6085700FF596C /* AfrikaViewController.swift */; };
 		0591815C28DF53C300509812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0591815B28DF53C300509812 /* AppDelegate.swift */; };
 		0591815E28DF53C300509812 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0591815D28DF53C300509812 /* SceneDelegate.swift */; };
 		0591816028DF53C300509812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0591815F28DF53C300509812 /* ViewController.swift */; };
@@ -16,11 +15,13 @@
 		0591816528DF53C800509812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0591816428DF53C800509812 /* Assets.xcassets */; };
 		0591816828DF53C800509812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0591816628DF53C800509812 /* LaunchScreen.storyboard */; };
 		0591817328DF568000509812 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0591817228DF568000509812 /* SecondViewController.swift */; };
+		05F740D728E5976B00527FC3 /* ModeSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F740D628E5976B00527FC3 /* ModeSelectionTableViewController.swift */; };
+		05F740D928E5BBD400527FC3 /* EuropeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F740D828E5BBD400527FC3 /* EuropeViewController.swift */; };
+		05F740DB28E5D4A100527FC3 /* AsiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F740DA28E5D4A100527FC3 /* AsiaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		053F7C3128E0A59D00F384D7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		054D01C428DF7A0C00EAD8A5 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		0544685528E6085700FF596C /* AfrikaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfrikaViewController.swift; sourceTree = "<group>"; };
 		0591815828DF53C300509812 /* Guess country flag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess country flag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0591815B28DF53C300509812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0591815D28DF53C300509812 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +31,9 @@
 		0591816728DF53C800509812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0591816928DF53C800509812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0591817228DF568000509812 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		05F740D628E5976B00527FC3 /* ModeSelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModeSelectionTableViewController.swift; path = ../Views/ModeSelectionTableViewController.swift; sourceTree = "<group>"; };
+		05F740D828E5BBD400527FC3 /* EuropeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuropeViewController.swift; sourceTree = "<group>"; };
+		05F740DA28E5D4A100527FC3 /* AsiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsiaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,14 +47,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		053F7C3328E0A5A700F384D7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				053F7C3128E0A59D00F384D7 /* Model.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		0591814F28DF53C300509812 = {
 			isa = PBXGroup;
 			children = (
@@ -71,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				0591817128DF53FE00509812 /* Delegates */,
-				053F7C3328E0A5A700F384D7 /* Model */,
 				0591817028DF53E300509812 /* Views */,
 				0591816F28DF53D400509812 /* Controllers */,
 				0591816428DF53C800509812 /* Assets.xcassets */,
@@ -85,7 +80,10 @@
 			children = (
 				0591815F28DF53C300509812 /* ViewController.swift */,
 				0591817228DF568000509812 /* SecondViewController.swift */,
-				054D01C428DF7A0C00EAD8A5 /* SettingsTableViewController.swift */,
+				05F740D828E5BBD400527FC3 /* EuropeViewController.swift */,
+				05F740DA28E5D4A100527FC3 /* AsiaViewController.swift */,
+				0544685528E6085700FF596C /* AfrikaViewController.swift */,
+				05F740D628E5976B00527FC3 /* ModeSelectionTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,9 +178,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0591817328DF568000509812 /* SecondViewController.swift in Sources */,
-				054D01C528DF7A0C00EAD8A5 /* SettingsTableViewController.swift in Sources */,
 				0591816028DF53C300509812 /* ViewController.swift in Sources */,
-				053F7C3228E0A59D00F384D7 /* Model.swift in Sources */,
+				0544685628E6085700FF596C /* AfrikaViewController.swift in Sources */,
+				05F740D928E5BBD400527FC3 /* EuropeViewController.swift in Sources */,
+				05F740D728E5976B00527FC3 /* ModeSelectionTableViewController.swift in Sources */,
+				05F740DB28E5D4A100527FC3 /* AsiaViewController.swift in Sources */,
 				0591815C28DF53C300509812 /* AppDelegate.swift in Sources */,
 				0591815E28DF53C300509812 /* SceneDelegate.swift in Sources */,
 			);
