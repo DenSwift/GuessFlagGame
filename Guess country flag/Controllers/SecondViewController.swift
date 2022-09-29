@@ -334,13 +334,30 @@ class SecondViewController: UIViewController {
     }
     // Count round in game
     private  func countRound(sender: UIButton) {
+        var text: String = ""
         
         if rounds != 1 {
             if sender.isTouchInside {
                 rounds -= 1
             }
         } else {
-            let alert = UIAlertController(title: "Поздравляем!", message: "Ваш результат - \(scoreLabel.text!)", preferredStyle: .alert)
+            
+            switch score {
+            case -10...0:
+                text = "Иди учись, неуч!"
+            case 1...3:
+                text = "Очень плохо!"
+            case 4...5:
+                text = "Плохо!"
+            case 6...8:
+                text = "Неплохо!"
+            case 9...10:
+                text = "Вы гений!"
+            default:
+                break
+            }
+            
+            let alert = UIAlertController(title: text, message: "Ваш результат - \(scoreLabel.text!)", preferredStyle: .alert)
             let action = UIAlertAction(title: "Играть снова?", style: .default) { _ in
                 self.rounds = 10
                 self.scoreLabel.text = "0"
