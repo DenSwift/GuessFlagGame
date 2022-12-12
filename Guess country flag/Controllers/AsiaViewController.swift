@@ -344,7 +344,7 @@ class AsiaViewController: UIViewController {
             
             switch score {
             case -10...0:
-                text = "Иди учись, неуч!"
+                text = "Ужасно!"
             case 1...3:
                 text = "Очень плохо!"
             case 4...5:

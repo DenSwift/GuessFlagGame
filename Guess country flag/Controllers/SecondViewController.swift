@@ -327,7 +327,7 @@ class SecondViewController: UIViewController {
         }
         
         let array = [firstStorage.randomElement(), secondStorage.randomElement(), thirdStorage.randomElement(), fourthStorage.randomElement()]
-        
+    
         if let a = array.randomElement() {
             sender.text = a
         }
@@ -344,7 +344,7 @@ class SecondViewController: UIViewController {
             
             switch score {
             case -10...0:
-                text = "Иди учись, неуч!"
+                text = "Ужасно!"
             case 1...3:
                 text = "Очень плохо!"
             case 4...5:
