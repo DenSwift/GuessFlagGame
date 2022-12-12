@@ -1,5 +1,5 @@
 # GuessFlagGame
-
+This is a game in which you have to guess the flag of the country
 
 PREVIEW:
 
